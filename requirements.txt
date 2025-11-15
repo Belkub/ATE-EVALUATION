@@ -3,8 +3,9 @@ pandas
 cloudpickle
 matplotlib
 scipy
-
+speech_recognition
 openpyxl
+
 
 
 
