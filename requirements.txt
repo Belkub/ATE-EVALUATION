@@ -6,8 +6,9 @@ pandas
 cloudpickle
 matplotlib
 scipy
-
+altair<5
 openpyxl
+
 
 
 
