@@ -31,7 +31,7 @@ def voice():
 
 st.title("Сервис менеджера Оргбент")
 
-df_c = pd.read_excel('D:\\Documents\\Сервис\\company_1.xlsx')
+df_c = pd.read_excel('company_1.xlsx')
 df_c = df_c.drop('Unnamed: 0', axis = 1)
 df_c = df_c.dropna(subset=['Компания'])
 df_c = df_c.drop_duplicates()
@@ -152,4 +152,5 @@ else:
         df_c.dropna(subset=['Компания'])
         df_c.to_excel('company_1.xlsx')
        
+
 
