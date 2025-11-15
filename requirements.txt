@@ -1,14 +1,12 @@
-streamlit==1.11.0
-SpeechRecognition==3.8.1
-PyAudio==0.2.14
-standard-imghdr
+speechrecognition
+pydub
 pandas
 cloudpickle
 matplotlib
 scipy
-altair<5
-aifc
+
 openpyxl
+
 
 
 
