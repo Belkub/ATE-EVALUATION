@@ -4,7 +4,7 @@ import math
 import pandas as pd
 
 import pickle
-from pydub import AudioSegment
+# from pydub import AudioSegment
 import cloudpickle
 
 import speech_recognition as sr
@@ -152,3 +152,4 @@ else:
         df_c.dropna(subset=['Компания'])
         df_c.to_excel('company_1.xlsx')
        
+
