@@ -5,6 +5,7 @@ matplotlib
 scipy
 
 openpyxl
-
+pydub
 pyaudio
+
 
