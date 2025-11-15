@@ -3,4 +3,6 @@ pandas
 cloudpickle
 matplotlib
 scipy
+
 openpyxl
+pydub
