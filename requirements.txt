@@ -7,5 +7,6 @@ scipy
 openpyxl
 pydub
 pyaudio
+pyaudioop
 
 
