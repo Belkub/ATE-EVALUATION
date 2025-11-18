@@ -230,15 +230,15 @@ try:
             a[i] = i
         t_1 = st.selectbox('СОЗДАТЬ КОМПАНИЮ: ', list(a))
         rr = st.checkbox('Глосовой ввод')
-        text = 'new sample'
-        with open("file_1.txt", "w") as file:  
+        text = 'new company'
+        with open("file.txt", "w") as file:  
             file.write(text)
             file.close()
         if rr:
-            text_1 = voice()
-            if text_1:
+            text = voice()
+            if text:
                 with open("file.txt", "w") as file:  
-                    file.write(text_1)
+                    file.write(text)
                     file.close()
         
         with open("file.txt", "r") as file:  
