@@ -241,7 +241,7 @@ try:
                     file.write(text)
                     file.close()
         with open("file.txt", "w") as file:  
-            file.write(t_1)
+            file.write(text)
             file.close()
         with open("file.txt", "r") as file:  
             text = file.read()
