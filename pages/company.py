@@ -235,10 +235,10 @@ try:
             file.write(text)
             file.close()
         if rr:
-            text = voice()
-            if text:
+            text_1 = voice()
+            if text_1:
                 with open("file.txt", "w") as file:  
-                    file.write(text)
+                    file.write(text_1)
                     file.close()
         with open("file.txt", "w") as file:  
             file.write(text)
