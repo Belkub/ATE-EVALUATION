@@ -240,9 +240,7 @@ try:
                 with open("file.txt", "w") as file:  
                     file.write(text_1)
                     file.close()
-        with open("file.txt", "w") as file:  
-            file.write(text)
-            file.close()
+        
         with open("file.txt", "r") as file:  
             text = file.read()
             file.close()
