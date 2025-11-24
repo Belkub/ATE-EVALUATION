@@ -84,9 +84,9 @@ try:
                 ta = st.checkbox('Записать таблицу в файл .xlsx')
                 if ta:
                     st.warning('Создайте папку Data на диске С для записи данных')
-                    if st.button('Показать и записать таблицу в файл C:\Data\table.xlsx'):
+                    if st.button('Показать и записать таблицу в файл D:\Data\table.xlsx'):
                         st.dataframe(df_ff[number]) 
-                        df_ff[number].to_excel("C:\\Data\\table.xlsx")
+                        df_ff[number].to_excel("D:\\Data\\table.xlsx")
                 else:
                     if st.button('Показать сводную таблицу'): 
                         st.dataframe(df_ff[number]) 
@@ -100,9 +100,9 @@ try:
                         ta = st.checkbox('Записать таблицу в файл .xlsx')
                         if ta:
                             st.warning('Создайте папку Data на диске С для записи данных')
-                            if st.button('Показать и записать таблицу в файл C:\Data\table.xlsx'):
+                            if st.button('Показать и записать таблицу в файл D:\Data\table.xlsx'):
                                 st.dataframe(df_ff[number]) 
-                                df_ff[number].to_excel("C:\\Data\\table.xlsx")
+                                df_ff[number].to_excel("D:\\Data\\table.xlsx")
                         else:
                             if st.button('Показать сводную таблицу'): 
                                 st.dataframe(df_ff[number]) 
@@ -323,4 +323,5 @@ except:
     st.error("Ошибка ввода данных. Сделайте шаг назад или очистите кэш")
 
 ##       
+
 
