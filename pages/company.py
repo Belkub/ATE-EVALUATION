@@ -59,10 +59,10 @@ try:
                 number = num
             bnn = st.checkbox('Записать сводную таблицу в файл .xlsx')
             if bnn:
-                st.warning('Создайте папку Data на диске C для записи данных')
-                if st.button('Показать свод и записать в файл C:\Data\company.xlsx'):
+                st.warning('Создайте папку Data на диске D для записи данных')
+                if st.button('Показать свод и записать в файл D:\Data\company.xlsx'):
                     st.dataframe(df_c[number]) 
-                    df_c[number].to_excel("C:\\Data\\company.xlsx")
+                    df_c[number].to_excel("D:\\Data\\company.xlsx")
             else:
                 if st.button('Показать таблицу'): 
                     st.dataframe(df_c[number]) 
