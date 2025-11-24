@@ -45,6 +45,8 @@ try:
         df_f = df_f.drop('Unnamed: 0', axis = 1)
     df_c = df_c.dropna(subset=['Компания'])
     df_c = df_c.drop_duplicates()
+    tr = df_c['Компания'].unique()
+    df_f = df_f.loc[df_f['Компания'].isin(tr)]
 
 
     ss = st.sidebar.checkbox('Изменить имя образца/удалить')
@@ -321,3 +323,4 @@ except:
     st.error("Ошибка ввода данных. Сделайте шаг назад или очистите кэш")
 
 ##       
+
