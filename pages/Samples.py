@@ -61,8 +61,8 @@ try:
                 number = num
             bnn = st.checkbox('Записать сводную таблицу в файл .xlsx')
             if bnn:
-                st.warning('Создайте папку Data на диске D для записи данных')
-                if st.button('Показать свод и записать в файл D:\Data\table.xlsx'):
+                st.warning('Создайте папку Data на диске C для записи данных')
+                if st.button('Показать свод и записать в файл C:\Data\table.xlsx'):
                     st.dataframe(df_f[number]) 
                     df_f[number].to_excel("C:\\Data\\table.xlsx")
             else:
@@ -83,10 +83,10 @@ try:
             if spp == 1:
                 ta = st.checkbox('Записать таблицу в файл .xlsx')
                 if ta:
-                    st.warning('Создайте папку Data на диске D для записи данных')
-                    if st.button('Показать и записать таблицу в файл D:\Data\table.xlsx'):
+                    st.warning('Создайте папку Data на диске C для записи данных')
+                    if st.button('Показать и записать таблицу в файл C:\Data\table.xlsx'):
                         st.dataframe(df_ff[number]) 
-                        df_ff[number].to_excel("D:\\Data\\table.xlsx")
+                        df_ff[number].to_excel("C:\\Data\\table.xlsx")
                 else:
                     if st.button('Показать сводную таблицу'): 
                         st.dataframe(df_ff[number]) 
@@ -99,10 +99,10 @@ try:
                     if spp == 2:
                         ta = st.checkbox('Записать таблицу в файл .xlsx')
                         if ta:
-                            st.warning('Создайте папку Data на диске D для записи данных')
-                            if st.button('Показать и записать таблицу в файл D:\Data\table.xlsx'):
+                            st.warning('Создайте папку Data на диске C для записи данных')
+                            if st.button('Показать и записать таблицу в файл C:\Data\table.xlsx'):
                                 st.dataframe(df_ff[number]) 
-                                df_ff[number].to_excel("D:\\Data\\table.xlsx")
+                                df_ff[number].to_excel("C:\\Data\\table.xlsx")
                         else:
                             if st.button('Показать сводную таблицу'): 
                                 st.dataframe(df_ff[number]) 
@@ -115,10 +115,10 @@ try:
                             if spp == 3:
                                 ta = st.checkbox('Записать таблицу в файл .xlsx')
                                 if ta:
-                                    st.warning('Создайте папку Data на диске D для записи данных')
-                                    if st.button('Показать и записать таблицу в файл D:\Data\table.xlsx'):
+                                    st.warning('Создайте папку Data на диске C для записи данных')
+                                    if st.button('Показать и записать таблицу в файл C:\Data\table.xlsx'):
                                         st.dataframe(df_ff[number]) 
-                                        df_ff[number].to_excel("D:\\Data\\table.xlsx")
+                                        df_ff[number].to_excel("C:\\Data\\table.xlsx")
                                 else:
                                     if st.button('Показать сводную таблицу'): 
                                         st.dataframe(df_ff[number]) 
@@ -323,6 +323,7 @@ except:
     st.error("Ошибка ввода данных. Сделайте шаг назад или очистите кэш")
 
 ##       
+
 
 
 
