@@ -33,9 +33,7 @@ try:
 
  
     st.header("chat_mobile/company")
-    vv = st.sidebar.checkbox('Прочитать данные')
-    if vv:
-        df_c = pd.read_excel('company_1.xlsx')
+    df_c = pd.read_excel('company_1.xlsx')
     if 'Unnamed: 0' in df_c.columns:
         df_c = df_c.drop('Unnamed: 0', axis = 1)
     df_c = df_c.dropna(subset=['Компания'])
