@@ -61,10 +61,7 @@ try:
                 st.warning('Создайте папку Data на диске D для записи данных')
                 if st.button('Показать свод и записать в файл D:\Data\company.xlsx'):
                     st.dataframe(df_c[number]) 
-                    df_c[number].to_excel("D:\\Data\\company.xlsx")
-                    with open("D:\\Data\\file.txt", "w") as file:  
-                        file.write(df_c[number])
-                        file.close()
+                    df_c[number].to_excel(r"D:\Data\company.xlsx")
             else:
                 if st.button('Показать таблицу'): 
                     st.dataframe(df_c[number]) 
