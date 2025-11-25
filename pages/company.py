@@ -56,15 +56,9 @@ try:
             num = st.multiselect('Выбрать значимые поля', list(df_c.columns))
             if num:
                 number = num
-            bnn = st.checkbox('Записать сводную таблицу в файл .xlsx')
-            if bnn:
-                st.warning('Создайте папку Data на диске D для записи данных')
-                if st.button('Показать свод и записать в файл D:\Data\company.xlsx'):
-                    st.dataframe(df_c[number]) 
-                    df_c[number].to_excel(r"D:\Data\company.xlsx")
-            else:
-                if st.button('Показать таблицу'): 
-                    st.dataframe(df_c[number]) 
+            
+            if st.button('Показать таблицу'): 
+                st.dataframe(df_c[number]) 
         else:
             number = list(df_c.columns)
 
@@ -78,15 +72,9 @@ try:
         if p_11:
             df_cc = df_c.loc[df_c[p_1].isin(p_11)]
             if spp == 1:
-                ta = st.checkbox('Записать таблицу в файл .xlsx')
-                if ta:
-                    st.warning('Создайте папку Data на диске С для записи данных')
-                    if st.button('Показать и записать таблицу в файл C:\Data\company.xlsx'):
-                        st.dataframe(df_cc[number]) 
-                        df_cc[number].to_excel("C:\\Data\\company.xlsx")
-                else:
-                    if st.button('Показать сводную таблицу'): 
-                        st.dataframe(df_cc[number]) 
+                
+                st.button('Показать сводную таблицу'): 
+                    st.dataframe(df_cc[number]) 
             else:
                 del new_row_1[p_1]
                 p_2 = st.selectbox('Добавить поле_2: ', list(new_row_1))
@@ -94,15 +82,9 @@ try:
                 if p_22:
                     df_cc = df_cc.loc[df_cc[p_2].isin(p_22)]
                     if spp == 2:
-                        ta = st.checkbox('Записать таблицу в файл .xlsx')
-                        if ta:
-                            st.warning('Создайте папку Data на диске С для записи данных')
-                            if st.button('Показать и записать таблицу в файл C:\Data\company.xlsx'):
-                                st.dataframe(df_cc[number]) 
-                                df_cc[number].to_excel("C:\\Data\\company.xlsx")
-                        else:
-                            if st.button('Показать сводную таблицу'): 
-                                st.dataframe(df_cc[number]) 
+                        
+                        if st.button('Показать сводную таблицу'): 
+                            st.dataframe(df_cc[number]) 
                     else:
                         del new_row_1[p_2]
                         p_3 = st.selectbox('Добавить поле_3: ', list(new_row_1))
@@ -110,15 +92,9 @@ try:
                         if p_33:
                             df_cc = df_cc.loc[df_cc[p_3].isin(p_33)]
                             if spp == 3:
-                                ta = st.checkbox('Записать таблицу в файл .xlsx')
-                                if ta:
-                                    st.warning('Создайте папку Data на диске С для записи данных')
-                                    if st.button('Показать и записать таблицу в файл C:\Data\company.xlsx'):
-                                        st.dataframe(df_cc[number]) 
-                                        df_cc[number].to_excel("C:\\Data\\company.xlsx")
-                                else:
-                                    if st.button('Показать сводную таблицу'): 
-                                        st.dataframe(df_cc[number]) 
+                                
+                                if st.button('Показать сводную таблицу'): 
+                                    st.dataframe(df_cc[number]) 
     elif pp == False and ss == True:
         
         for i in list(df_c['Компания']):
