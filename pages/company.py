@@ -261,6 +261,7 @@ try:
             df_c.dropna(subset=['Компания'])
             datatoexcel = pd.ExcelWriter('company_1.xlsx')
             df_c.to_excel(datatoexcel)
+            datatoexcel.save()
             datatoexcel.close()
         
             #with pd.ExcelWriter("company_1.xlsx", engine='xlsxwriter') as writer:
