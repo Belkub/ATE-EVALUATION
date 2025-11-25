@@ -259,9 +259,9 @@ try:
             df_c = pd.concat([df_c, df_m], axis=0, ignore_index = True)
             df_c = df_c.drop_duplicates(subset=['Компания'])
             df_c.dropna(subset=['Компания'])
-            with pd.ExcelWriter("company_1.xlsx", engine='xlsxwriter') as writer:
-                df.to_excel(writer)  
-            # df_c.to_excel('company_1.xlsx')
+            #with pd.ExcelWriter("company_1.xlsx", engine='xlsxwriter') as writer:
+             #   df.to_excel(writer)  
+            df_c.to_excel('company_1.xlsx')
 except:
     st.error("Ошибка ввода данных. Сделайте шаг назад или очистите кэш")
        
