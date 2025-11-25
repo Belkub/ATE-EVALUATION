@@ -4,8 +4,9 @@ pandas
 cloudpickle
 matplotlib
 scipy
-
+xlsxwriter
 openpyxl
+
 
 
 
