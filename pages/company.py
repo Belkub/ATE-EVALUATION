@@ -31,10 +31,11 @@ try:
             text = speech_to_text(audio_value)
             return text
 
-
+ 
     st.header("chat_mobile/company")
-
-    df_c = pd.read_excel('company_1.xlsx')
+    vv = st.sidebar.checkbox('Прочитать данные')
+    if vv:
+        df_c = pd.read_excel('company_1.xlsx')
     if 'Unnamed: 0' in df_c.columns:
         df_c = df_c.drop('Unnamed: 0', axis = 1)
     df_c = df_c.dropna(subset=['Компания'])
