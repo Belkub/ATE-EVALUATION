@@ -73,7 +73,7 @@ try:
             df_cc = df_c.loc[df_c[p_1].isin(p_11)]
             if spp == 1:
                 
-                st.button('Показать сводную таблицу'): 
+                if st.button('Показать сводную таблицу'): 
                     st.dataframe(df_cc[number]) 
             else:
                 del new_row_1[p_1]
